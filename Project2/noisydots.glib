@@ -1,0 +1,18 @@
+##OpenGL GLIB
+Perspective 70
+LookAt  0 0 3  0 0 0  0 1 0
+Noise3D 128
+
+Vertex   noisydots.vert
+Fragment noisydots.frag
+Program  noisydots				\
+		uAd <.01 .05 .5>  uBd <.01 .05 .5>		\
+		uNoiseAmp <0. 0. 1.>    uNoiseFreq <0. 1. 10.>  \
+		uAlpha <0. 1. 1.>   \
+		uTol <0. 0. 1.>		\
+		uUseChromaDepth <false>        \
+		uChromaRed  <-5. -3.8 0.>      \
+		uChromaBlue <-3. -1.1 2.>      
+
+Color 1. 0.9. 1.
+Obj pigY.obj

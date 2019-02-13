@@ -1,0 +1,8 @@
+
+ERROR: 0:51: 'Noise3D' : undeclared identifier 
+ERROR: 0:52: 'texture' : no matching overloaded function found (using implicit conversion) 
+ERROR: 0:51: '=' :  cannot convert from 'const highp float' to '4-component vector of highp float'
+ERROR: 0:55: 'texture' : no matching overloaded function found (using implicit conversion) 
+ERROR: 0:54: '=' :  cannot convert from 'const highp float' to '4-component vector of highp float'
+
+
