@@ -1,0 +1,65 @@
+##OpenGL GLIB
+Ortho -5. 5.   -5. 5.
+Perspective 90
+LookAt  2 2 13  0 0 0  0 1 0
+Noise3D 128
+
+Vertex   xdecaying.vert
+Fragment xdecaying.frag
+Program  xdecaying				\
+                uColor {1. 0.25 0.77 1.}                    
+Translate 0 0 2 
+Obj pigY.obj
+
+ Texture2D 5 behind.bmp
+
+Vertex   mag.vert  
+Fragment mag.frag
+Program  Mag                                            \
+        uImageUnit  5  
+Translate 0 0 -2  
+QuadXY .2 5.
+
+ Texture2D 5 right.bmp
+
+Vertex   mag.vert
+Fragment mag.frag
+Program  Mag                                            \
+        uImageUnit  5  
+Rotate 90 0 1 0  
+Translate -5 0 4.8.  
+QuadXY .2 5.
+
+
+ Texture2D 5 right.bmp
+
+Vertex   mag.vert
+Fragment mag.frag
+Program  Mag                                            \
+        uImageUnit  5  
+Translate 0 0 -10    
+QuadXY .2 5.
+
+
+ Texture2D 5 bottom.bmp
+
+Vertex   mag.vert
+Fragment mag.frag
+Program  Mag                                            \
+        uImageUnit  5  
+Rotate 90 1 0 0
+Translate 0 5 4.8
+Rotate 90 0 0 1
+QuadXY .2 5.2
+
+ Texture2D 5 top.bmp
+
+Vertex   mag.vert
+Fragment mag.frag
+Program  Mag                                            \
+        uImageUnit  5  
+Rotate -180 0 0 1 
+Translate -0.25 0 -10
+QuadXY .2 5.1
+
+
